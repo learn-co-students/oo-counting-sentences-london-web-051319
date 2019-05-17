@@ -16,8 +16,6 @@ class String
 
   def count_sentences
     myarr = self.split(/[?.!]/)
-    myarr.size
-    myarr.reject {|sentence| sentence == ""}.size
-    #binding.pry
+    myarr.reject {|sent| sent == ""}.size
   end
 end
